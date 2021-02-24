@@ -1,0 +1,6 @@
+repositories:
+  "gontxomde/flask-prubea":
+    "pushers":
+      - gontxomde
+    "tags":
+      - latest

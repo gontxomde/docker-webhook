@@ -1,0 +1,26 @@
+{
+  "push_data": {
+    "pushed_at": 1614172885,
+    "images": [],
+    "tag": "latest",
+    "pusher": "gontxomde"
+  },
+  "callback_url": "https://registry.hub.docker.com/u/gontxomde/flask-prubea/hook/21cc010d0bc1e44hgd5edafeccd4de3jg/",
+  "repository": {
+    "status": "Active",
+    "description": "",
+    "is_trusted": false,
+    "full_description": "# flask-example\n\nA minimal web app developed with [Flask](http://flask.pocoo.org/) framework. \n\nThe main purpose is to introduce how to implement the essential elements in web application with Flask, including\n\n- URL Building\n\n- Authentication with Sessions\n\n- Template & Template Inheritance\n\n- Error Handling\n\n- Integrating with *Bootstrap*\n\n- Interaction with Database (SQLite)\n\n- Invoking static resources\n\nFor more basic knowledge of Flask, you can refer to [a tutorial on Tutorialspoint](https://www.tutorialspoint.com/flask/).\n\n\n## How to Run\n\n- Step 1: Make sure you have Python\n\n- Step 2: Install the requirements: `pip install -r requirements.txt`\n\n- Step 3: Go to this app's directory and run `python app.py`\n\n\n\n## Details about This Toy App\n\nThere are three tabs in this toy app\n\n- **Public**: this is a page which can be accessed by anyone, no matter if the user has logged in or not.\n\n- **Private**: Only logged-in user can access this page. Otherwise the user will get a 401 error page.\n\n- **Admin Page**: This part is only open to the user who logged in as \"Admin\". In this tab, the administrator can manage accounts (list, delete, or add).\n\n\nA few accounts were set for testing, like ***admin*** (password: admin), ***test*** (password: 123456), etc. You can also delete or add accounts after you log in as ***admin***.\n\n\n\n## References\n\n- http://flask.pocoo.org/\n\n- https://www.tutorialspoint.com/flask/\n\n\n\n## Credict\nImage private.jpg: https://commons.wikimedia.org/wiki/File:(315-365)_Locked_(6149414678).jpg\n\nImage public.jpg: https://commons.wikimedia.org/wiki/File:Drown%3F!_(131380682).jpg\n",
+    "repo_url": "https://hub.docker.com/r/gontxomde/flask-prubea",
+    "owner": "gontxomde",
+    "is_official": false,
+    "is_private": false,
+    "name": "flask-prubea",
+    "namespace": "gontxomde",
+    "star_count": 0,
+    "comment_count": 0,
+    "date_created": 1613765485,
+    "dockerfile": "FROM python:3.6\n\n\nWORKDIR /usr/scr/app\n\nRUN git clone https://github.com/gontxomde/flask-example.git\nWORKDIR ./flask-example\n\nCOPY . ./\nRUN pip install --no-cache-dir -r requirements.txt\n\nENTRYPOINT python app.py",
+    "repo_name": "gontxomde/flask-prubea"
+  }
+}

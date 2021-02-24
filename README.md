@@ -44,7 +44,7 @@ Finally, within my application code, I will create a directory `hooks` and place
 #!/bin/bash
 
 cd /code
-docker-compose build --pull && docker-compose up --build --remove-orphans -d
+docker-compose.yml build --pull && docker-compose.yml up --build --remove-orphans -d
 ```
 
 Commands such as `bash`, `make`, `python` and `docker-compose` are available within the `staticfloat/docker-webhook` image, but if you need something more complex than that, you will likely need to add them.
