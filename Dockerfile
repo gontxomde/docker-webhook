@@ -1,7 +1,7 @@
 FROM docker:stable
 
 RUN apk add --no-cache python3 openssl-dev libffi-dev make git build-base python3-dev py3-pip bash && \
-    pip3 install docker-compose && \
+    pip3 install --upgrade pip --user && pip3 install docker-compose && \
     apk del build-base python3-dev libffi-dev openssl-dev
 
 # Create /app/ and /app/hooks/
